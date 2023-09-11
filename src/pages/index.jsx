@@ -17,6 +17,7 @@ const customStyle = {
   marginRight: 'auto',
 }
 
+
 const Page = () => (
   <>
     <Head>
@@ -31,6 +32,9 @@ const Page = () => (
         py: 8
       }}
     >
+      <h1 style={{marginBottom: '7%', textAlign: 'center'}}>
+        Welcome Back, User
+      </h1>
       <Container maxWidth="xl">
         <Grid
           container

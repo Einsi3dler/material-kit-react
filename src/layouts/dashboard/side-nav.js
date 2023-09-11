@@ -48,8 +48,8 @@ export const SideNav = (props) => {
             href="/"
             sx={{
               display: 'inline-flex',
-              height: 32,
-              width: 32
+              height: 80,
+              width: 80
             }}
           >
             <Logo />
@@ -102,7 +102,7 @@ export const SideNav = (props) => {
         open
         PaperProps={{
           sx: {
-            backgroundColor: 'neutral.800',
+            backgroundColor: '#070707',
             color: 'common.white',
             width: 280
           }
