@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import ArrowDownIcon from '@heroicons/react/24/solid/ArrowDownIcon';
 import ArrowUpIcon from '@heroicons/react/24/solid/ArrowUpIcon';
-import CurrencyDollarIcon from '@heroicons/react/24/solid/CurrencyDollarIcon';
+import BanknotesIcon from '@heroicons/react/24/solid/BanknotesIcon';
 import { Avatar, Card, CardContent, Stack, SvgIcon, Typography } from '@mui/material';
 
-export const OverviewBudget = (props) => {
+export const OverviewTransaction = (props) => {
   const { difference, positive = false, sx, value } = props;
 
   return (
@@ -21,7 +21,7 @@ export const OverviewBudget = (props) => {
               color="text.secondary"
               variant="overline"
             >
-              Budget
+              Amount Transacted
             </Typography>
             <Typography variant="h4">
               {value}
@@ -35,7 +35,7 @@ export const OverviewBudget = (props) => {
             }}
           >
             <SvgIcon>
-              <CurrencyDollarIcon />
+              <BanknotesIcon />
             </SvgIcon>
           </Avatar>
         </Stack>
@@ -77,7 +77,7 @@ export const OverviewBudget = (props) => {
   );
 };
 
-OverviewBudget.prototypes = {
+OverviewTransaction.prototypes = {
   difference: PropTypes.number,
   positive: PropTypes.bool,
   sx: PropTypes.object,

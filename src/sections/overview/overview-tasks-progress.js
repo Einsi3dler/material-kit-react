@@ -11,7 +11,7 @@ import {
   Typography
 } from '@mui/material';
 
-export const OverviewTasksProgress = (props) => {
+export const OverviewSuccesfulEscrows = (props) => {
   const { value, sx } = props;
 
   return (
@@ -29,7 +29,7 @@ export const OverviewTasksProgress = (props) => {
               gutterBottom
               variant="overline"
             >
-              Task Progress
+              Completed Escrows
             </Typography>
             <Typography variant="h4">
               {value}%
@@ -58,7 +58,7 @@ export const OverviewTasksProgress = (props) => {
   );
 };
 
-OverviewTasksProgress.propTypes = {
+OverviewSuccesfulEscrows.propTypes = {
   value: PropTypes.number.isRequired,
   sx: PropTypes.object
 };
