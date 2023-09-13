@@ -11,6 +11,7 @@ import {
   Stack,
   SvgIcon,
   Tooltip,
+  Button,
   useMediaQuery
 } from '@mui/material';
 import { alpha } from '@mui/material/styles';
@@ -78,6 +79,15 @@ export const TopNav = (props) => {
             direction="row"
             spacing={2}
           >
+            <Button
+                  fullWidth
+                  size="medium"
+                  sx={{ mt: 3 }}
+                  type="submit"
+                  variant="contained"
+                >
+                  Start A New Transaction
+            </Button>
             <Tooltip title="Contacts">
               <IconButton>
                 <SvgIcon fontSize="small">
